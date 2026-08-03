@@ -1,29 +1,33 @@
 # Backend Project 1 - REST API Fundamentals
 
-A simple REST API built using **Node.js** and **Express.js** as part of Backend Development Project 1.
+> Built as part of the **DecodeLabs Backend Development Internship Program**.
 
-## Technologies Used
+## 📖 Overview
+
+This project is a simple REST API developed using **Node.js** and **Express.js**. It demonstrates the fundamentals of backend development, including routing, HTTP methods, JSON responses, request validation, and proper HTTP status codes.
+
+## 🚀 Tech Stack
 
 - Node.js
 - Express.js
 - JavaScript
-- Postman (for API testing)
+- Postman
 
-## Features
+## ✨ Features
 
-- Create a local Express server
-- GET Home Route
-- GET All Users
-- GET User By ID
-- POST New User
-- Input Validation
+- Express Server
+- GET Home Route (`/`)
+- GET All Users (`/users`)
+- GET User By ID (`/users/:userID`)
+- POST New User (`/users`)
+- Request Validation
 - Duplicate User ID Prevention
 - JSON Responses
 - Proper HTTP Status Codes
 
-## Project Structure
+## 📂 Project Structure
 
-```
+```text
 backend-project-1/
 │
 ├── server.js
@@ -33,152 +37,79 @@ backend-project-1/
 └── README.md
 ```
 
-## Installation
+## ⚙️ Installation
 
-Clone the repository:
+Clone the repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/backend-project-1.git
 ```
 
-Move into the project directory:
+Move into the project
 
 ```bash
 cd backend-project-1
 ```
 
-Install dependencies:
+Install dependencies
 
 ```bash
 npm install
 ```
 
-Start the server:
+Run the server
 
 ```bash
 node server.js
 ```
 
-The server will run on:
+The server runs on:
 
 ```
 http://localhost:3000
 ```
 
-## API Endpoints
+## 📌 API Endpoints
 
-### Home Route
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/` | Welcome route |
+| GET | `/users` | Returns all users |
+| GET | `/users/:userID` | Returns a user by ID |
+| POST | `/users` | Adds a new user |
 
-**GET /**
+## 📊 HTTP Status Codes
 
-Response
-
-```text
-Welcome to my first Express server!
-```
-
----
-
-### Get All Users
-
-**GET /users**
-
-Response
-
-```json
-[
-    {
-        "userID": 1,
-        "name": "surya"
-    },
-    {
-        "userID": 2,
-        "name": "pankaj"
-    }
-]
-```
-
----
-
-### Get User By ID
-
-**GET /users/:userID**
-
-Example
-
-```
-GET /users/1
-```
-
-Response
-
-```json
-{
-    "userID": 1,
-    "name": "surya"
-}
-```
-
-If the user does not exist:
-
-```json
-{
-    "message": "User not found"
-}
-```
-
----
-
-### Add New User
-
-**POST /users**
-
-Request Body
-
-```json
-{
-    "userID": 3,
-    "name": "Amit"
-}
-```
-
-Success Response
-
-```json
-{
-    "message": "User added successfully",
-    "users": [
-        {
-            "userID": 1,
-            "name": "surya"
-        },
-        {
-            "userID": 2,
-            "name": "pankaj"
-        },
-        {
-            "userID": 3,
-            "name": "Amit"
-        }
-    ]
-}
-```
-
-## HTTP Status Codes
-
-| Status Code | Description |
-|-------------|-------------|
+| Code | Description |
+|------|-------------|
 | 200 | OK |
 | 201 | Created |
 | 400 | Bad Request |
 | 404 | Not Found |
 
-## Validation
+## ✅ Validation
 
 - `userID` is required.
 - `name` is required.
-- Duplicate `userID` is not allowed.
+- Duplicate `userID` values are not allowed.
 
-## Author
+## 📚 Learning Outcomes
+
+Through this project, I learned:
+
+- Express.js fundamentals
+- REST API development
+- HTTP methods (GET & POST)
+- Routing
+- Route parameters (`req.params`)
+- Request body (`req.body`)
+- JSON responses
+- Input validation
+- Error handling
+- HTTP status codes
+
+## 👨‍💻 Author
 
 **Kannishk Chauhan**
+
+Backend Development Intern at DecodeLabs
