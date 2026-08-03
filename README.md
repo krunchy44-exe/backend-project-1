@@ -93,20 +93,6 @@ http://localhost:3000
 - `name` is required.
 - Duplicate `userID` values are not allowed.
 
-## 📚 Learning Outcomes
-
-Through this project, I learned:
-
-- Express.js fundamentals
-- REST API development
-- HTTP methods (GET & POST)
-- Routing
-- Route parameters (`req.params`)
-- Request body (`req.body`)
-- JSON responses
-- Input validation
-- Error handling
-- HTTP status codes
 
 ## 👨‍💻 Author
 
