@@ -1,4 +1,4 @@
-# Backend Project 1 - REST API Fundamentals
+# Backend Project 1 - REST API Fundamentals 
 
 > Built as part of the **DecodeLabs Backend Development Internship Program**.
 
